@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>My Portfolio</h1>
+      <nav>
+        <div class="dropdown">
+          <button class="dropbtn" id="menuBtn">Home ▼</button>
+          <div class="dropdown-content" id="dropdownMenu">
+            <a href="#about">About me</a>
+            <a href="#projects">Project gallery</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <article>
+        <!-- About Section -->
+        <section id="about">
+          <h2>About me</h2>
+          <p>
+            I am an undergraduate <strong>Informatics student</strong> who is actively involved 
+            in organizations and has a strong interest in <strong>technology and design</strong>. 
+            I have an understanding of <strong>UI/UX design</strong> and am proficient in several 
+            programming languages, including <strong>HTML, CSS, JavaScript, C, and C++.</strong>
+          </p>
+          <p>
+            My involvement in organizations has shaped my skills in 
+            <strong>teamwork, communication, and leadership</strong>, while my interest in 
+            programming and design drives me to continuously develop myself in the fields of 
+            <strong>front-end development</strong> and <strong>user experience</strong>.
+          </p>
+        </section>
+        
+        <!-- Project Gallery Section -->
+        <section id="projects">
+          <h2>Project gallery</h2>
+          <div class="slider-container" id="sliderContainer">
+            <div class="slider" id="slider">
+              <div class="slide">
+                <h3>Organization</h3>
+                <p>Active in the organization.</p>
+                <img src="img/p1.png" alt="Person who is active in organizations" />
+              </div>
+              <div class="slide">
+                <h3>Home Page Login</h3>
+                <p>Login home page interface.</p>
+                <img src="img/p2.png" alt="Login home page" />
+              </div>
+              <div class="slide">
+                <h3>Network Topology</h3>
+                <p>Network Topology.</p>
+                <img src="img/p3.png" alt="Network Topology diagram" />
+              </div>
+            </div>
+
+            <!-- Slider Controls -->
+            <div class="slider-controls">
+              <button class="slider-btn" id="prevBtn">Prev</button>
+              <button class="slider-btn" id="nextBtn">Next</button>
+            </div>
+
+            <!-- Slider Dots -->
+            <div class="slider-dots" id="sliderDots"></div>
+          </div>
+        </section>
+      </article>
+
+      <!-- Aside (Biodata) -->
+      <aside>
+        <img src="img/pp.jpg" alt="Profile picture" />
+        <h3>Biodata</h3>
+        <ul>
+          <li><strong>Nama:</strong> Gema Vizayaksa</li>
+          <li><strong>Profesi:</strong> Student</li>
+          <li><strong>Email:</strong> gemavizayaksa@gmail.com</li>
+          <li><strong>Lokasi:</strong> Jakarta, Indonesia</li>
+          <li><strong>Spesialisasi:</strong> C, C++, HTML, CSS, JavaScript</li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      <p>© 2025 Gema Vizayaksa | Dibuat menggunakan HTML, CSS, dan JavaScript</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+ </body>
+</html>
